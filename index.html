@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
     <section>
         <nav>
-            <img src="./assets/FES.svg" alt="" />
+            <img src="./assets/FES.svg" class="logo" alt="">
             <ul>
                 <li>
                     <a href="#About">About</a>
@@ -20,61 +21,87 @@
                 </li>
             </ul>
         </nav>
+
         <header>
-            <div>
-                <h1>Best place to learn Frontend</h1>
-                <p>Go from absolute beginner to pro with a simplified process</p>
-                <button>Start now</button>
+            <div class="row">
+                <div>
+                    <h1>Best place to learn Frontend</h1>
+                    <p class="subheader">Go from absolute beginner to pro with a simplified process</p>
+                    <button>Start now</button>
+                </div>
+                <figure>
+                    <img src="./assets/laptop.png" class="laptop" alt="Home page image">
+                </figure>
             </div>
-            <figure>
-                <img src="./assets/laptop.png" alt="Home page image">
-            </figure>
         </header>
     </section>
 
     <main>
         <section id="About">
             <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-            <div>
-                <figure>
-                    <img src="./assets/about.jpg" alt="">
-                </figure>
+            <div class="row">
+                <div class="section__description">
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">Fronted Simplified is an online learning program focused
+                            on
+                            teaching the skills for a frontend
+                            developer
+                            career, including HTML, CSS, JavaScript, and React</p>
+                        <p class="section__description--para">It offers a structured curriculum with a strong emphasis
+                            on
+                            building a professional portfolio and
+                            preparing for job interviews through hands-on projects. The platform is designed to help
+                            beginners
+                            land
+                            high-paying tech jobs with features like a community, career services, and a job guarantee
+                        </p>
+                    </div>
+                    <figure class="about__img--wrapper">
+                        <img src="./assets/about.jpg" alt="">
+                    </figure>
+                </div>
             </div>
         </section>
 
         <section id="Discord">
             <h2>Discord</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-            <div>
-                <figure>
-                    <img src="./assets/discord.png" alt="">
-                </figure>
-            </div>
+            <div class="row">
+                <div class="section__description">
+                    <figure class="about__img--wrapper">
+                        <img src="./assets/discord.png" alt="">
+                    </figure>
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">Discord group chat in web developer is a community-based
+                            platform for real-time discussion and
+                            collaboration focused on creating websites and web applications.</p>
+                        <p class="section__description--para">You can join a web developer Discord groupd chat to
+                            connect
+                            with other developers, get help with
+                            projects, find job opportunities, and stay updated on industry trends.</p>
+                    </div>
+                </div>
         </section>
 
         <section id="Contact">
             <h2>Contact</h2>
             <form action="">
                 <label>Email</label>
-                <input type="text" placeholder="jane@example.com">
+                <input type="email" placeholder="jane@example.com">
                 <label>Message</label>
-                <textarea type="text" placeholder="Nice website, let's connect!"></textarea>
-                <button>Send</button>
+                <textarea rows="10" cols="30" type="text" placeholder="Cool website, let's get started!"></textarea>
+                <button>Contact Us!</button>
             </form>
 
         </section>
     </main>
 
     <footer>
-        <img src="./assets/FES.svg" alt="" />
-        <div>
-            <a href="#about">About</a>
-            <a href="#Discord">Discord</a>
-            <a href="#Contact">Contact</a>
-            <a href="">Courses</a>
+        <img class="footer__logo" src="./assets/FES.svg" alt="" />
+        <div class="footer__links">
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#Discord">Discord</a>
+            <a class="footer__link" href="#Contact">Contact</a>
+            <a class="footer__link" href="">Courses</a>
         </div>
         <p>Copyright Frontend</p>
     </footer>
